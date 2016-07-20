@@ -1,0 +1,13 @@
+.accounts {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.chart {
+    display: block; 
+    width: 100%;
+}
+
+.back {
+  transform: rotateY(180deg);
+}

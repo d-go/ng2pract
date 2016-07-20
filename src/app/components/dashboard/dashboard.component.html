@@ -1,0 +1,31 @@
+<md-sidenav-layout>
+    <md-sidenav #start (open)="mybutton.focus()">
+        Start Sidenav.
+        <br>
+        <!--<button md-button #mybutton (click)="start.close()">Close</button>-->
+    </md-sidenav>
+    <md-sidenav #end align="end">
+        End Sidenav.
+        <!--<button md-button (click)="end.close()">Close</button>-->
+    </md-sidenav>
+
+    <dtwo-card title="Account Overview" [cardWidth]="400">
+        <card-front>
+            <account-overview></account-overview>
+        </card-front>
+        <card-back>
+            <h1>some content</h1>
+        </card-back>
+    </dtwo-card>
+
+    <dtwo-card title="Income" [cardWidth]="700">
+        <card-front>
+            <income-spend></income-spend>
+        </card-front>
+        <card-back>
+            <h1>some content</h1>
+        </card-back>
+    </dtwo-card>
+
+
+</md-sidenav-layout>
